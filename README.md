@@ -8,11 +8,19 @@ currently in code friendly form.
 
 
 
-## Data Available
+## Helpers
+
+### Instances
+
+```js
+var instances = require('awsinfo/instances');
+```
+
+Sourced from <http://aws.amazon.com/ec2/instance-types/>.
 
 ### Instance Sizes
 
-```
+```js
 var types = require('awsinfo/instancesizes');
 ```
 
@@ -22,6 +30,15 @@ An array of the sizes of instances that are available.
 
 Filter the range of sizes down to only those between the specified
 `from` and `to` values.
+
+### Utilities
+
+Some helper functions for massaging instance information into a useful format.
+
+### `toNames(instances) => []`
+
+Convert the multi-dimensional instance information into a flattened
+array of instance names, i.e. `['m2.small', 'm2.medium', ...]`.
 
 ## License(s)
 
