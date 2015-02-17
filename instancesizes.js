@@ -1,7 +1,7 @@
 /**
   ### Instance Sizes
 
-  ```
+  ```js
   var types = require('awsinfo/instancesizes');
   ```
 

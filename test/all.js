@@ -1,1 +1,2 @@
 require('./instancesizes');
+require('./util');
