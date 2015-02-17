@@ -1,1 +1,1 @@
-require('./instancetypes');
+require('./instancesizes');
