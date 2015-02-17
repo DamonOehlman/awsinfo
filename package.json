@@ -1,0 +1,26 @@
+{
+  "name": "awsinfo",
+  "version": "1.0.0",
+  "description": "Some generally useful information for AWS that is mostly only documented and not currently code friendly",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DamonOehlman/awsinfo.git"
+  },
+  "keywords": [
+    "aws",
+    "metadata"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamonOehlman/awsinfo/issues"
+  },
+  "homepage": "https://github.com/DamonOehlman/awsinfo",
+  "devDependencies": {
+    "tape": "^3.5.0"
+  }
+}
