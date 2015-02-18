@@ -21,6 +21,12 @@ exports.limitSize = function(instances, size) {
   return instances.map(justMatchingSize).filter(hasSize);
 };
 
+exports.limitType = function(instances, type) {
+  return instances.filter(function(data) {
+    return data[0] === type;
+  });
+};
+
 /**
   ### `toNames(instances) => []`
 
