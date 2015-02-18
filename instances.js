@@ -7,7 +7,8 @@ var sizes = require('./instancesizes');
   var instances = require('awsinfo/instances');
   ```
 
-Sourced from <http://aws.amazon.com/ec2/instance-types/>.
+  A list of current generation EC2 instance types and sizes,
+  source from <http://aws.amazon.com/ec2/instance-types/>.
 
 **/
 var instances = module.exports = [

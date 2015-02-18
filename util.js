@@ -1,4 +1,5 @@
 var flatten = require('whisk/flatten');
+var eq = require('whisk/equality');
 
 /**
   ### Utilities
@@ -6,6 +7,19 @@ var flatten = require('whisk/flatten');
   Some helper functions for massaging instance information into a useful format.
 
 **/
+
+exports.limitSize = function(instances, size) {
+
+  function justMatchingSize(data) {
+    return [data[0], data[1].filter(eq(size))].concat(data.slice(2));
+  }
+
+  function hasSize(data) {
+    return data[1].length > 0;
+  }
+
+  return instances.map(justMatchingSize).filter(hasSize);
+};
 
 /**
   ### `toNames(instances) => []`
